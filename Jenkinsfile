@@ -16,5 +16,10 @@ steps {
 echo «Развёртывание приложения...»
 }
 }
+post {
+always {
+deleteDir()
+}
+}
 }
 }
